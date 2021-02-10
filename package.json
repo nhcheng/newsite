@@ -24,7 +24,7 @@
     "eject": "react-scripts eject",
     "deploy": "gh-pages -d build"
   },
-  "homepage": "https://samuel-chlam.github.io/site/",
+  "homepage": "https://samuel-chlam.github.io/newsite/",
   "eslintConfig": {
     "extends": [
       "react-app",
