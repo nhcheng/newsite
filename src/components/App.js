@@ -62,7 +62,7 @@ class App extends Component {
               handleLogout={this.handleLogout}
               userId={this.state.userId} */}
           <Router>
-            <Home path="/" />
+            <Home path="/newsite" />
             <Teaching path="/teaching" />
             <MyStory path="/mystory" />
             <Achieve path="/cv" />

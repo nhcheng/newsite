@@ -22,9 +22,10 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
-  "homepage": "https://samuel-chlam.github.io/newsite/",
+  "homepage": "https://samuel-chlam.github.io/newsite",
   "eslintConfig": {
     "extends": [
       "react-app",
@@ -43,7 +44,7 @@
     "file-loader": "^6.2.0",
     "gh-pages": "^3.1.0",
     "html-loader": "^1.3.2",
-    "html-webpack-plugin": "^4.5.0",
+    "html-webpack-plugin": "^4.5.1",
     "react-hot-loader": "^4.13.0",
     "style-loader": "^2.0.0"
   },
