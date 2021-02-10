@@ -20,7 +20,7 @@ class NavBar extends Component {
       <>
         <nav className="NavBar-container">
             <div className="NavBar-title u-inlineBlock">
-              <Link to="/" className="NavBar-link">
+              <Link to="/newsite" className="NavBar-link">
                   Home
               </Link>
               {/* <Link to="/mystory" className="NavBar-link">
