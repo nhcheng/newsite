@@ -1,0 +1,56 @@
+.bottombanner-container {
+    position: relative;
+    /* top: 4vh; */
+    /* width: 100%; */
+    padding: 2vw 10%;
+    display: flex;
+    background-color: var(--medgrey);
+    font-size: 16px;
+}
+
+.bottombanner-left {
+    /* height: 50px; */
+    width: 70%;
+    padding-right: 3vw;
+}
+
+.bottombanner-leftmain {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* .bottombanner-logo {
+    width: 55%;
+} */
+
+.bottombanner-link {
+    width: 30%;
+}
+
+.bottombanner-description {
+    position: relative;
+    top: 2vh;
+    font-size: 14px;
+    color: gray;
+    /* padding-right: 3vw; */
+}
+
+.bottombanner-right {
+    font-size: 15px;
+    color: gray;
+}
+
+.contact-item {
+    display: flex;
+}
+
+.contact-itemleft {
+    width: 15px;
+    margin-right: 6px;
+    background-size: cover;
+}
+
+.contact-itemleft img {
+    opacity: 90%;
+    height: 11px;
+}

@@ -1,0 +1,30 @@
+.notfound {
+    height: 56vh;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url("../../img/NotFoundBanner.jpg");
+    background-repeat: no-repeat; 
+    background-position: 50% 0;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+.notfound-bodycontainer {
+    position: relative;
+    top: 30%;
+    align-content: center;
+    width: 50%;
+    /* display: flex;
+    flex-direction: column; */
+    padding: 0% 40% 0% 10%;
+    color: white;
+}
+
+.notfound-des {
+    position: relative;
+    top: 30px;
+    text-align: right;
+    padding-left: 18%;
+    font-size: 14px;
+    font-weight: 250;
+    color: var(--medgrey);
+}

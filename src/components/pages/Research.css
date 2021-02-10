@@ -1,0 +1,46 @@
+.research-grid {
+    margin-top: 4vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 15px;
+    grid-template-areas:
+    "One-Left One-Right"
+    "Two-Left Two-Right"
+    "Three Three"
+    "Four Four";
+    grid-auto-rows: auto;
+}
+
+.math-banner-highlight {
+    color: var(--blue);
+    font-size: 38px;
+    font-weight:300;
+}
+
+.research-ml-left {
+    grid-area: One-Left;
+}
+
+.research-ml-right {
+    grid-area: One-Right;
+}
+
+.research-bayes-left {
+    grid-area: Two-Left;
+}
+
+.research-bayes-right {
+    grid-area: Two-Right;
+}
+
+.research-dynam-one {
+    grid-area: Three;
+}
+
+.research-dynam-two {
+    grid-area: Four;
+}
+
+/* .math-right {
+} */

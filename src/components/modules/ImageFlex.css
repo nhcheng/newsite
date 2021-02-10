@@ -1,0 +1,37 @@
+.imageflex-container {
+    position: relative;
+    margin-bottom: 18px;
+}
+
+.imageflex-left {
+    width: 10%;
+    padding: 6px;
+}
+
+.imageflex-right {
+    margin-left: 5%;
+    width: 85%;
+}
+
+.imageflex-margin {
+    margin-bottom: 8px;
+}
+
+.imageflex-title-left {
+    width: 70%
+}
+
+.imageflex-title-des {
+    color: gray;
+    font-style: italic;
+}
+
+.imageflex-title-right {
+    text-align: right;
+    width: 30%
+}
+
+.imageflex-remark {
+    color: gray;
+    font-size: 14px;
+}

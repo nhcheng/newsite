@@ -1,0 +1,18 @@
+.home-banner-highlight {
+    color: var(--blue);
+    font-size: 48px;
+    font-weight:300;
+}
+
+/* block */
+
+.home-flexleft{
+    align-items: center;
+    width: 70%;
+}
+
+.home-flexright{
+    margin-left: 10%;
+    align-items: center;
+    /* width: 20%; */
+}

@@ -1,0 +1,25 @@
+.courselist-title {
+    display: flex;
+    padding: 12px;
+    background-color: var(--medgrey);
+}
+
+.courselist-title-left {
+    width: 98%;
+}
+
+.courselist-title-right {
+    align-items: center;
+    justify-content: center;
+}
+
+.courselist-year-container {
+    padding: 12px;
+    background-color: var(--lightgrey);
+}
+
+.courselist-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 12px;
+}

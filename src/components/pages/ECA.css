@@ -1,0 +1,27 @@
+.ECA-highlight {
+    color: var(--blue);
+    font-size: 48px;
+    font-weight:300;
+}
+
+.ECA-firstfig {
+    justify-content: center;
+}
+
+.ECA-figleft {
+    width: 45%;
+}
+
+.ECA-figright {
+    margin-left: 5%;
+    width: 47%;
+}
+
+.ECA-secondfigleft {
+    width: 40%;
+}
+
+.ECA-secondfigright {
+    margin-left: 5%;
+    width: 60%;
+}

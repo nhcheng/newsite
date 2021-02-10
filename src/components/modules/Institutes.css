@@ -1,0 +1,48 @@
+.institutes-container {
+    display: flex;
+    width: 391px;
+}
+
+.institutes-imperial {
+    display: block;
+    background: url("../../img/logo/institutes/IMP_ML_K_PS.png") no-repeat;
+    background-size: cover;
+    width: calc(1504px*0.111);
+    height: calc(394px*0.11);
+    padding: 0;
+    margin: 0;
+}
+
+.institutes-imperial:hover {
+    display: block;
+    background: url("../../img/logo/institutes/IMP_ML_1CS_4CP.png") no-repeat;
+    background-size: cover;
+    width: calc(1504px*0.111);
+    height: calc(394px*0.11);
+    padding: 0;
+    margin: 0;
+}
+
+.institutes-mit {
+    display: block;
+    background: url("../../img/logo/institutes/MIT-logo-with-spelling-design1-large-black-gray.svg") no-repeat;
+    background-size: cover;
+    width: 184px;
+    height: 43.5px;
+    padding: 0;
+    margin: 0 0 0 40px;
+}
+
+.institutes-mit:hover {
+    display: block;
+    background: url("../../img/logo/institutes/MIT-logo-with-spelling-design1-large-red-gray.svg") no-repeat;
+    background-size: cover;
+    width: 184px;
+    height: 43.5px;
+    padding: 0;
+    margin: 0 0 0 40px;
+}
+/* 
+.institutes-imperial + .institutes-mit {
+    margin-left: 3vw;
+} */
