@@ -4,10 +4,11 @@ import "../../utilities.css";
 import "./Home.css";
 import { Link } from "@reach/router";
 import TopBanner from "../modules/TopBanner.js";
-import HomeBackground from "../../img/PersonalBanner(2).png";
+import HomeBackground from "../../img/ACEX.jpg";
 import MyAlert from "../modules/MyAlert.js"
-import randomWalk from "../../img/homerandom.png";
+import ChemEngWiki from "../../img/ChemEngWiki.png";
 import Image from "../modules/Image.js";
+import TNFa from "../../img/TNFa.png"
 
 class Home extends Component {
   constructor(props) {
@@ -25,73 +26,87 @@ class Home extends Component {
         <TopBanner 
           background={HomeBackground}
           // title="CHUN HEI SAMUEL LAM"
-          title={(<> CHUN HEI <span className="home-banner-highlight"> SAMUEL </span> LAM </>)}
-          content="I am a junior (third-year undergraduate student) at
-          Imperial College London majoring in mathematics, currently 
-          participating an exchange program at Massachusetts Institute
+          title={(<b> <span className="home-banner-highlight"> Thomas </span> Nok Hin Cheng </b>)}
+          content="I am a Third-year MEng undergraduate at
+          Imperial College London (ICL) majoring in Chemical Engineering, with an exchange year at Massachusetts Institute
           of Technology (MIT)."
-          des="Taken in 2018 at the main entrance of Imperial College London.
-          Credit to Daniel Lo."
+          // des="Taken in 2018 at the main entrance of Imperial College London.
+          // Credit to Daniel Lo."
         />
         <div className="u-block"> 
         <MyAlert 
             alerttype="red"
-            content="This webpage is currently in alpha, and is NOT compatible for mobile display."
+            content="This webpage is currently in development."
           />
         </div>
         <div className="u-block">
+            <h2> My goal...</h2>
+            <p style={{margin: 0}}>
+            My main goal is to develop new technologies to understand disease pathogenesis, and in particular those associated with inflammatory bowel disease (IBD), 
+            and to translate these discoveries to targeted, accessible and affordable therapies.
+            </p>
+          </div>
+        <br></br>
+        <br></br>
+        <div className="u-block">
         <div className="u-flex">
           <div className="home-flexleft">
-            <h2> As an applied mathematician...</h2>
+            <h2> My research interest...</h2>
             <p style={{margin: 0}}>
-              I mainly work in two areas of mathematics:
+            <h4> My primary research interest lies at the interface of biomedical science and chemical engineering. As an undergraduate researcher, I worked in the Heng’s Group to explore novel protein purification techniques and worked in the Chen’s Group to 
+            develop new drug delivery methods using pH-responsive biopolymer. Currently, I am an Undergraduate Research and Innovation Scholar at the Shalek Lab 
+            researching in high throughput drug screening and pheotype modelling in organoids.</h4>
+            <h4>I am mainly interested in understanding these areas of biomedical science by applying principles in chemical engineering:</h4>
             </p>
             <ul>
-              <li> <b> Theory of Statistics: </b> Develop fast algorithms for bayesian computations (e.g.
-              Monte-Carlo); study statistical properties of estimators arisen from machine learning algorithms
-              (e.g. components in PCA); applying statistical techniques to analyse and interpret real-life data. 
+              <li> <b> Mucosal Immunity </b> 
               </li>
-              <li> <b> Dynamical System: </b> Utilise the connection between dynamical systems (e.g.
-              Lorenz system) and stochastic processes to establish quantitative results. I am also
-              drawn to the study of return maps of chaotic systems.
+              <li> <b> Human Microbioime </b> 
+              </li> 
+              <li> <b> Gut Biology </b> 
               </li> 
             </ul>
+            <p> <Link to="/research"> Click here for more details about my research experiences. </Link> </p>
           </div>
+          
           <div className="home-flexright">
-            <Image src={randomWalk} 
-            des="A trajectory simulated by a chaotic process, which
-            resembles random walk." />
+            <Image src={TNFa} 
+            des="The strcture of an inflammatory cytokine TNF-α. (Strcuture obtained from Protein Data Bank, rendered in PyMOL)" />
           </div>
         </div>
         </div>
+        <br></br>
+        <br></br>
         <div className="u-block">
-          <p>
-            In addition to my research, I am creating resources to enhance undergraduates' experiences
-            in learning computational mathematics and statistics. These include a book on multivariate analysis with
-            demonstration in Julia language, and a repository of numerical methods. I am also a peer
-            tutor at Imperial College helping current freshmen (first-year undergraudates) to adopt
-            university life in a rapidly-changing Covid-19 situation.
+        <div className="u-flex">
+          <div className="home-flexleft">
+            <h2> Outside academia...</h2>
+            <p style={{margin: 0}}>
+            <h4> I am also interested in how innovative pedagogical approaches can improve learning experience and outcome. 
+          Elected as the academic representative of my year group, I introduced student-led pedagogical initiatives such as Chemical Engineering Wiki 
+          and tutoring schemes in the hope of enhancing peer learning within the cohort. I am also part of the transformation of experiential learning 
+          at the Department of Chemical Engineering using learning technologies such as HoloLens for Technologies-Enhanced Learning.</h4>
+            <p> <Link to="/teaching"> Click here for more details about my teaching experiences. </Link> </p>
+            <br></br>
+            <>In my free time, I enjoy music (mainly playing piano), cycling and board games!</>
             </p>
-          <p> <Link to="/publication"> Click here for more details and publications. </Link> </p>
-          <p>
-            My personal journey in mathematics began when I entered the HKCCCU Logos Academy (a comprehensive
-            school in Hong Kong). I had participated various enrichment programs offered by the Hong Kong University
-            of Science and Technology (HKUST) from Grade 8 to Grade 11. I then completed GCE A-Level and joined Imperial 
-            College London at the age of 16.
-          </p>
-          {/* <p> <Link to="/mystory"> Click here to read my stories. </Link> </p> */}
           </div>
-        <div className="u-block">
-          <h2> Outside academia... </h2>
-          <p>
-            In addition, I enjoy performing music (mainly by playing piano), building Minecraft architectures, 
-            exploring Christianity and developing webpages. I also enjoy cycling around (I have only learnt this when I 
-            was Year 2)!
-          </p>
-          <p> <Link to="/christianity"> Click here for my engagement as a christian. </Link> </p>
-          <p> <Link to="/eca"> Click here for other extra-curricular engagements. </Link> </p>
+
+          
+          <div className="home-flexright">
+            <Image src={ChemEngWiki}
+            des="ChemEng Wiki" />
+          </div>
         </div>
         </div>
+
+
+        </div>
+
+
+
+
+        
     );
   }
 }

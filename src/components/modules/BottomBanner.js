@@ -4,10 +4,11 @@ import Institutes from "./Institutes.js";
 
 import "../../utilities.css";
 import "./BottomBanner.css";
-import fbIcon from "../../img/icon/facebookicon.png";
 import githubIcon from "../../img/icon/githubicon.png";
 import linkedinIcon from "../../img/icon/linkedinicon.png";
 import emailIcon from "../../img/icon/emailicon.png";
+import googlescholarIcon from "../../img/icon/google-scholar--v2.png";
+import twitterIcon from "../../img/icon/43-twitter-512.png";
 
 
 class ContactItem extends Component {
@@ -57,7 +58,7 @@ class BottomBanner extends Component {
           <div className="bottombanner-description">
                 The webpage is developed with the skeleton code provided by 
                 the <a href="https://weblab.mit.edu/">MIT web.lab team</a>, and templates 
-                by <a href="https://lochungtin.github.io/site/">Timothy Lo</a> and <a href="https://nhcheng.mit.edu/">Thomas Cheng</a>. 
+                by <a href="https://lochungtin.github.io/site/">Timothy Lo</a> and <a href="https://samuel-chlam.github.io/">Samuel Lam</a>. 
                 The source code for this webpage is available in my GitHub.
           </div>
         </div>
@@ -69,17 +70,18 @@ class BottomBanner extends Component {
                 <li> Others: sammuelchlam@gmail.com </li>
             </ul> */}
             <div> 
-              <ContactItem src={fbIcon} 
-                detail={(<a href="https://www.facebook.com/chunhei.lam.1671/">Chun Hei Sammuel Lam</a>)}/>
-              <ContactItem src={githubIcon} 
-                detail={(<a href="https://github.com/Samuel-CHLam">Samuel-CHLam</a>)}/>
+              <ContactItem src={googlescholarIcon} 
+                detail={(<> <a href="https://scholar.google.com/citations?user=UqiLPw4AAAAJ&hl=en&authuser=1">Google Scholar</a> </>)}/>
               <ContactItem src={linkedinIcon} 
-                detail={(<> <a href="https://www.linkedin.com/in/ch-sammuel-6b446a190/">CH-Sammuel Lam</a> <span> (Inactive) </span> </>)}/>
+                detail={(<> <a href="https://www.linkedin.com/in/thomas-nok-cheng/">Linkedin</a> </>)}/>
+              <ContactItem src={githubIcon} 
+                detail={(<a href="https://twitter.com/nhcheng985">Twitter: @nhcheng985</a>)}/>
+              <ContactItem src={twitterIcon} 
+                detail={(<a href="https://github.com/nhcheng">Github: nhcheng</a>)}/>
               <ContactItem src={emailIcon} 
               detail={<>
-                <div> <a href="mailto:chun.lam18@imperial.edu">chun.lam18@imperial.edu</a> (Imperial) </div>
-                <div> <a href="mailto:chunhei@mit.edu">chunhei@mit.edu</a> (MIT) </div>
-                <div> <a href="mailto:sammuelchlam@gmail.com">sammuelchlam@gmail.com</a> (Others) </div>
+                <div> <a href="mailto:nok.cheng18@imperial.edu">nok.cheng18@imperial.edu</a> (Imperial) </div>
+                <div> <a href="mailto:nhcheng@mit.edu">nhcheng@mit.edu</a> (MIT) </div>
               </>}/>
             </div>
         </div>

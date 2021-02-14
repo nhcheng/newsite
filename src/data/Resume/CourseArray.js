@@ -1,106 +1,119 @@
 const Ythree = {
-    name: "Year 3 (Exchange)",
+    name: "Junior/Third Year (MIT and Harvard cross-registration)",
     termArray: [
+    {   
+        term: "2021 Spring",
+        attended: [
+            "6.UAR Seminar in Undergrad Research",
+            "10.490 Integrated Chemical Engineering",
+            "10.65 Chemical Reactor Engineering",
+            "10.997	Theoretical and Computational Immunology Seminar",
+            "20.365 Engineering the Immune System in Cancer and Beyond",
+            "HST.439 Viruses, Pandemics, Immunity",
+            "HST.539 Frontiers of Interdisciplinary Science in Human Health and Disease",
+            "HST.URG Undergraduate Research"
+        ],
+        listener: [
+            "7.093 Modern Biostatistics",
+            "HST.500 Frontiers in (Bio)Medical Engineering and Physics",
+            "HST.506 Computational Systems Biology: Deep Learning in the Life Sciences",
+            "HST.590 Biomedical Engineering Seminar Series",
+            "IDS.012	Statistics, Computation and Applications"
+        ],
+    },
     {   
         term: "2021 Independent Activities Period (IAP)",
         attended: [
-            "6.148 Weblab",
-            "6.S087 Multivariate Methods for Multidimensional Statistics"
+            "6.S191 Introduction to Deep Learning",
+            "HST.S43 Evolution of Epidemics",
+            "HST.URG Undergraduate Research"
         ],
-        listener: [
-            "6.S191 Deep Learning"
-        ]
+        listener: false
     },
     {
         term: "2020 Fall",
         attended: [
-            "18.103 Fourier Analysis (Revisited)",
-            "18.338 Eigenvalues of Random Matrices",
-            "18.353 Non-Linear Dynamics: Chaos",
-            "18.675 Theory of Probability (Revisited)"
+            "6.UAR Seminar in Undergrad Research",
+            "7.341 Advanced Undergraduate Seminar: The Microbiome and Drug Delivery",
+            "10.34 Numerical Methods Applied to Chemical Engineering",
+            "10.546 Statistical Thermodynamics",
+            "20.430 Fields, Forces, and Flows in Biological Systems",
+            "HST.175 Cellular & Molecular Immunology",
+            "HST.UR Undergraduate Research"
         ],
-        listener: [
-            "18.155 Differential Analysis I"
-        ]
+        listener: false
     }
 ]}
 
 const Ytwo = {
-    name: "Year 2",
+    name: "Sophomore/Second Year (Imperial)*",
     termArray: [
-    {
-        term: "2020 Summer",
-        attended: [
-            "Year 2 Final Project"
-        ],
-        listener: []
-    },
     {
         term: "2020 Spring",
         attended: [
-            "Differential Equation",
-            "Introduction to Numerical Analysis",
-            "Complex Analysis",
-            "Metric Spaces and Topology"
+            "Chemical Engineering Mastery II",
+            "Biochemistry",
+            "Industrial Chemistry",
+            "Fluid Mechanics II",
+            "Heat Transfer",
+            "Separation Processes II",
+            "Reactor and Controller Design",
+            "Knowledge Laboratory",
+            "Economic Evaluation of Projects"
         ],
         listener: [
-            "Probability Theory",
-            "Statistical Theory",
-            "Introduction to Statistical Learning",
-            "Multivariate Analysis"
+            "Modelling of Biological Systems",
+            "Molecular Modelling of Fluid"
         ]
     },
     {
         term: "2019 Fall",
         attended: [
-            "Multivariate Calculus (Revisited)",
-            "Real Analysis",
-            "Algebra II",
-            "Probability of Statistics II (Revisited)"
+            "Chemical Engineering Mastery II",
+            "Process Dynamics and Control",
+            "Reaction Engineering I",
+            "Thermodynamics II",
+            "Mathematics II",
+            "Knowledge Laboratory"
         ],
         listener: [
-            "Introduction to Partial Differential Equations",
-            "Measure and Integration",
-            "Time Series Analysis"
+            "Biochemical Engineering",
+            "Transport Processes in Biological System",
+            "Process Model Solution and Optimization"
         ]
     }
 ]}
 
 const Yone = {
-    name: "Year 1",
+    name: "Freshman/First Year (Imperial)*",
     termArray: [
-    {
-        term: "2019 Summer",
-        attended: [
-            "Year 1 Final Project"
-        ],
-        listener: []
-    },
     {
         term: "2019 Spring",
         attended: [
-            "Mechanics",
-            "Mathematical Methods II",
-            "Analysis I",
-            "Algebra I"
+            "Chemical Engineering Mastery I",
+            "Heat & Mass Transfer",
+            "Mathematics I",
+            "Chemistry I",
+            "Separation Processes I",
+            "Business Ethics for Chemical Engineers",
+            "Foundation Laboratory",
         ],
-        listener: [
-            "Introduction to Numerical Analysis",
-            "Statistical Modelling I"
-        ]
+        listener: false
     },
     {
         term: "2018 Fall",
         attended: [
-            "Foundation of Analysis",
-            "Mathematical Methods I",
-            "Geometry and Linear Algebra",
-            "Probability and Statistics I"
+            "Chemical Engineering Mastery I",
+            "Process Analysis",
+            "Fluid Mechanics I",
+            "Thermodynamics I",
+            "Physical Chemistry",
+            "Mathematics I",
+            "Design Project",
+            "Introduction to MATLAB",
+
         ],
-        listener: [
-            "Multivariate Calculus",
-            "Probability and Statistics II"
-        ]
+        listener: false
     }
 ]}
 

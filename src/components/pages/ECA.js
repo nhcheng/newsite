@@ -6,7 +6,7 @@ import TopBanner from "../modules/TopBanner.js";
 import Image from "../modules/Image.js"
 import ImageFlex from "../modules/ImageFlex.js"
 
-import ECABackground from "../../img/ECABanner.png";
+import ECABackground from "../../img/ACEX.jpg";
 import webpage from "../../img/webpage.png";
 import minecraft from "../../img/minecraft_station.png";
 import cambodia from "../../img/cambodia.jpg";
@@ -31,9 +31,9 @@ class ECA extends Component {
           title={<> <span className="ECA-highlight"> Extra-curricular </span> Engagements </>}
           content="Here is a summary of extra-curricular activites I have 
           participated for the last few years"
-          des={<> Taken in 2018 during a rehearsal of <i> Imperial College 
-            DramSoc</i> production of drama <i> And Then There Were None</i>.
-            I was a Deputy Stage Manager in that production. Credit to Daniel Lo.</>}
+          // des={<> Taken in 2018 during a rehearsal of <i> Imperial College 
+          //   DramSoc</i> production of drama <i> And Then There Were None</i>.
+          //   I was a Deputy Stage Manager in that production. Credit to Daniel Lo.</>}
         />
         <div className="u-block">
           <h2> Year 2/3</h2>

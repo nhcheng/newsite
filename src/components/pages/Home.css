@@ -1,14 +1,14 @@
 .home-banner-highlight {
-    color: var(--blue);
+    color: #fff066;
     font-size: 48px;
-    font-weight:300;
+    font-weight:1000;
 }
 
 /* block */
 
 .home-flexleft{
     align-items: center;
-    width: 70%;
+    width: 200%;
 }
 
 .home-flexright{

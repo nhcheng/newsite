@@ -32,12 +32,9 @@ class NavBar extends Component {
               <Link to="/research" className="NavBar-link">
                   Research
               </Link>
-              <Link to="/christianity" className="NavBar-link">
-                  Religion
-              </Link>
-              <Link to="/eca" className="NavBar-link">
+              {/* <Link to="/eca" className="NavBar-link">
                   ECA
-              </Link>
+              </Link> */}
             </div>
             <div className="NavBar-linkContainer u-inlineBlock">
               <Link to="/cv" className="NavBar-link">

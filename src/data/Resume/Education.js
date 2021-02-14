@@ -15,7 +15,7 @@ const EducationList = [
         titleright: "September 2020 - Present",
         content: (<> 
             <ul className="u-nomargin"> 
-                <li> Concentration: Dynamical Systems, Stochastic Analysis, Statistical Learning </li>
+                <li> Concentration: Chemical Engineering (Course X), Biological Engineering (Course VII), Health Sciences and Technology</li>
                 <li> Fall and IAP Results: GPA 5.0/5.0 </li>
             </ul>
             </>),
@@ -25,31 +25,16 @@ const EducationList = [
         key: "Imperial",
         image: imperialLogo,
         title: "Imperial College London",
-        titledes: "MSCi Mathematics with a Year Abroad",
+        titledes: "MEng Chemical Engineeirng with a Year Abroad",
         titleright: "October 2018 - Present",
         content: (<> 
             <ul className="u-nomargin"> 
-                <li> Concentration: Dynamical Systems, Stochastic Analysis, Statistical Learning </li>
-                <li> Year 1 Results: First honor with Dean's List </li>
-                <li> Year 2 Results: First honor with Dean's List </li>
+                <li> Freshman/First Year Results: Top of the Year, First honor and Dean's List </li>
+                <li> Sophomore/Second Year Results: Top of the Year, First honor and Dean's List </li>
             </ul>
             </>),
         remark: ""
     },
-    {
-        key: "Logos",
-        image: logosLogo,
-        title: "The Hong Kong Chinese Christian Churches Union Logos Academy",
-        titledes: "Secondary Education (Grade 7-11)* / A Level",
-        titleright: "September 2013 - July 2018",
-        content: (<> 
-            <ul className="u-nomargin"> 
-                <li> A Level Results: Modular Mathematics** (A*, A*, A*), Physics (A), Chinese (A*) </li>
-                <li> Third of cohort in Grade 9, First of cohort in Grade 10. </li>
-            </ul>
-            </>),
-        remark: "* Grade 12 was skipped. **Modular Mathematics refers to a combination of three subjects: Mathematics, Further Mathematics and Further Mathematics (Additional)."
-    }
 ]
 
 export {mitLogo, imperialLogo, logosLogo, EducationList}

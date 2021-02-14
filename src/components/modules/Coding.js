@@ -3,25 +3,29 @@ import React, { Component } from "react";
 import "../../utilities.css";
 import "./Coding.css";
 
-import css3 from "../../img/logo/skills/css.png";
-import html5 from "../../img/logo/skills/html.png";
+import aspen from "../../img/logo/skills/Aspen.png";
+import gproms from "../../img/logo/skills/gproms.png";
 import julia from "../../img/logo/skills/julia.png";
 import matlab from "../../img/logo/skills/matlab.png";
-import mern from "../../img/logo/skills/mern_logo_cut.png";
+import GAMS from "../../img/logo/skills/GAMS.png";
 import python from "../../img/logo/skills/python.png";
 import rlang from "../../img/logo/skills/R.png";
+import pymol from "../../img/logo/skills/Pymol.png";
+import gromacs from "../../img/logo/skills/gromacs.png";
 
 const sciComp = [
-    {lang: "Julia", src: julia},
     {lang: "MATLAB", src: matlab},
     {lang: "Python", src: python},
     {lang: "R", src: rlang},
+    {lang: "Julia", src: julia},
 ]
 
 const webDev = [
-    {lang: "HTML5", src: html5},
-    {lang: "CSS3", src: css3},
-    {lang: "MongoDB, Express.js, React.js, Node.js (MERN)", src: mern},
+    {lang: "GROMACS", src: gromacs},
+    {lang: "PyMOL", src: pymol},
+    {lang: "ASPEN", src: aspen},
+    {lang: "gPROMS", src: gproms},
+    {lang: "GAMS", src: GAMS},
 ]
 
 class CodingCard extends Component {
@@ -58,7 +62,7 @@ class Coding extends Component {
         </div>
         </div>
       <div className="coding-block">
-        <div className="coding-title"> <h3 className="u-nomargin"> Webpage Developments </h3> </div>
+        <div className="coding-title"> <h3 className="u-nomargin"> Research Software </h3> </div>
         <div className="u-flex coding-container"> 
         {webDev.map( (item,i) => { return (
                 <CodingCard key={i} langObj={item} />

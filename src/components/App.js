@@ -11,7 +11,6 @@ import MyStory from "./pages/MyStory.js"
 import Achieve from "./pages/Achieve.js"
 import Research from "./pages/Research.js"
 import Publication from "./pages/Publication.js"
-import Christian from "./pages/Christian.js"
 import ECA from "./pages/ECA.js"
 import Privacy from "./pages/Privacy.js"
 
@@ -68,7 +67,6 @@ class App extends Component {
             <Achieve path="/cv" />
             <Research path="/research" />
             <Publication path="/publication" />
-            <Christian path="/christianity" />
             <ECA path="/eca" />
             <Privacy path="/privacy" />
             <NotFound default />

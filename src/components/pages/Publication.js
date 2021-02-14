@@ -1,22 +1,17 @@
 import React, { Component } from "react";
+import { Link } from "@reach/router";
 
 import "../../utilities.css";
-import "./Publication.css";
+import "./Research.css";
 import TopBanner from "../modules/TopBanner.js";
-import PublicationBackground from "../../img/PublicationBanner.png";
+import Image from "../modules/Image.js";
+import polymer_blend from "../../img/polymer_blend.jpg";
+import nanoparticle from "../../img/nanoparticle.jpg";
+import contact_angle from "../../img/contact_angle.png";
+import mathBackground from "../../img/ACEX.jpg";
+import solvation from "../../img/solvation.jpg";
 
-import Stats from "../../data/Publication/Statistics_II.pdf";
-import Empirical from "../../data/Publication/Empirical.pdf";
-import RMTPDF from "../../data/Publication/18_338_Final_Project.pdf";
-import RMTPres from "../../data/Publication/18_338_Presentation.pdf";
-// import RMTNote from "../../data/Publication/18_338_Final_Notebook.html";
-import PWSPDF from "../../data/Publication/18_353_Pilot_Wave_System.pdf";
-import UROP1 from "../../data/Publication/UROP_Task_1.pdf";
-import UROP2 from "../../data/Publication/UROP_Task_2.pdf";
-import M1RPDF from "../../data/Publication/M1R_Poster.pdf";
-import M1RPres from "../../data/Publication/M1R_Slides.pdf";
-
-class Publication extends Component {
+class Research extends Component {
   constructor(props) {
     super(props);
     this.state = {};
@@ -29,40 +24,78 @@ class Publication extends Component {
   render() {
     return (
       <div className="App-container">
-        <TopBanner 
-          background={PublicationBackground}
-          title={(<span className="publication-highlight"> PUBLICATION </span>)}
-          content={(<>Here is a list of writings in mathematics. They are mainly Expository
-          papers, but I am working towards publishing a book and further resources. </>)}
-          des="Return map of Pilot Wave system - taken from 18.353 final project."
+      <TopBanner 
+          background={mathBackground}
+          title={<> <span 
+          className="highlight"> Publications </span> </>}
+          content="“To get to know, to discover, to publish - this is the destiny of a scientist.” - Francois Arago"
+          // des={<> Samples from brownian bridge. The <i>Empirical Central Limit 
+          //   Theorem</i> reveals that empirical process converges weakly to brownian 
+          //   bridge as size of sample increases. Taken from 18.675 final paper with Shawn Im. </>}
         />
-        <div className="u-block">
-            <h2> Book/Notes </h2>
-                <ul>
-                <li> <b>(In progress)</b> Theory of Classical Statistics II: Regression and Multivariate Analysis with demonstration in Julia. <a
-                    href={Stats} target="_blank"> Chapter 1-3 </a></li>
-                <li> <b>(In progress)</b> Mathematics Computing Demonstration <a href="https://github.com/ImperialCollegeLondon/Mathematical-Computing-Demo" target="_blank"> Github Repository </a> </li>
-                </ul>
-            <h2> Expository Paper </h2>
-            <p>Some miscellaneous informal expository writings on math. They are mainly my coursework.</p>
-            <h4>Year 3 @MIT</h4>
-                <ul>
-                    <li>Empirical Distribution Theory (with S. Im), 2020. (Final project of course 18.675 Theory of Probability) <a href={Empirical} target="_blank">Notes</a> </li>
-                    <li>Computation of Empirical Measure, 2020. (Final project of course 18.338 Random Matrices) <a href={RMTPDF} 
-                    target="_blank">PDF Notes</a>, <a href={RMTPres} target="_blank">Slides</a></li> {/* <a href={RMTNote} target="_blank">Full Notes</a>, */}
-                    <li>Characterising Chaos in Pilot Wave System, 2020. (Final project of course 18.353 Non-Llinear Dynamics I: Chaos). <a 
-                    href={PWSPDF}>Notes</a></li>
-                </ul>
-            <h4>Year 1/2 @Imperial</h4>
-                <ul>
-                    <li>Enhanced Diffusion Process. 2020. (supervised by M. Coti-Zelati) (2nd year UROP) <a href={UROP1} target="_blank">Stage 1</a>, <a href={UROP2}>Stage 2</a> completed. Stage 3 to be resumed after more studies on backward SDE.</li>
-                    <li>A Retrospective Analysis of Governmental Interventions to COVID-19, 2020. (with H. Liu et. al. supervised by A. Duncan) (2nd year research project) <b>Available upon request.</b></li>
-                    <li>Simple Application of Approximate Bayesian Computation (ABC) in Modelling Tumor Growth, 2019. (supervised by A. Duncan) (1st year research project) <a href={M1RPDF}>Poster</a>, <a href={M1RPres}>Slides</a></li>
-                </ul>
+      <div className="u-block">
+          <h3> Please visit <a href="https://scholar.google.com/citations?user=UqiLPw4AAAAJ&hl=en&authuser=1">this</a> page for my google scholar profile. </h3> 
+      </div>
+      <div className="u-block">
+        <div className="research-grid">
+          <div className="research-first-left">
+            <Image src={polymer_blend}
+            des="Polymer blend demixing modelled with Cahn-Hilliard equation" />
+          </div>
+          <div className="research-first-right">
+            <h3> <b>Introducing students to research codes: A short course on solving partial differential equations in Python</b> </h3>
+            <h3> Pavan Inguva, Vijesh J. Bhute, <b>Thomas N.H. Cheng</b>, Pierre J. Walker</h3>
+            <p> <a href="https://www.sciencedirect.com/science/article/pii/S1749772821000117">Education for Chemical Engineers</a>, 2021</p>
+          </div>
+          <div className="research-second-left">
+            <h3> <b>Protein purification with nanoparticle-enhanced crystallisation</b> </h3>
+            <h3> Wenqian Chen, <b>Thomas NH Cheng</b>, Liang Fa Khaw, Xiaoyu Li, Huaiyu Yang, Jinbo Ouyang, Jerry YY Heng </h3>
+            <p> <a href="https://www.sciencedirect.com/science/article/pii/S138358662031858X">Separation and Purification Technology</a>, 2021</p>
+          </div>
+          <div className="research-second-right">
+            <Image src={nanoparticle}
+            des="SEM images of silica nanoparticle" />
+          </div>
+          <div className="research-third-left">
+            <Image src={contact_angle}
+            des="Water contact angle for pristine and modified nanoparticles" />
+          </div>
+          <div className="research-third-right">
+            <h3> <b>Surface hydrophobicity: effect of alkyl chain length and network homogeneity </b></h3>
+                        <h3> Wenqian Chen, Vikram Karde, <b>Thomas NH Cheng</b>, Siti S Ramli, Jerry YY Heng </h3>
+            <p> <a href="https://link.springer.com/article/10.1007/s11705-020-2003-0">Frontiers of Chemical Science and Engineering</a>, 2020</p>
+          </div>
+          <div className="research-fourth-left">
+            <h3> <b>Computational Analysis of the Solid‐State and Solvation Properties of Carbamazepine in Relation to its Polymorphism</b> </h3>
+            <h3> Ian Rosbottom, <b>Thomas NH Cheng</b>, Jerry YY Heng </h3>
+            <p> <a href="https://onlinelibrary.wiley.com/doi/full/10.1002/ceat.202000056">Chemical Engineering & Technology</a>, 2020</p>
+          </div>
+          <div className="research-fourth-right">
+            <Image src={solvation}
+            des="Solvation of anti-epilepsy drug Carbamazepine in different solvent clusters" />
+          </div>
+        </div>
+        
+        {/* <div>
+            <h3> Dynamical Systems and Stochastic Analysis </h3>
+            <p> I have always been astonished by the relationship between deterministic differential equations and Stochastic Differential Equations (SDE). 
+            The classical formulae of Dynkin and Feynman-Kac had helped us to study the quantitative behaviors of solutions to differential equations. 
+            Recent studies revealed that chaotic systems like the Lorenz system behave like random walks. This motivates me to study how one can construct 
+            dynamical systems that have similar behavior as solutions of SDE, and how could we exploit this relation in proving estimates for dynamical systems. 
+            I am also drawn to understanding the behavior of return maps of chaotic systems.
+            </p>
+          </div> */}
+          {/* <div>
+            <Image src={Diffusion}
+              des="(Left) Numerical solutions of pure diffusion and advection-diffusion by finite difference scheme.
+              (Right) Comparison of L2 energy of solutions of pure diffusion and advection-diffusion. The L2 energy
+              decay at a faster rate under the inflence of advection flow. My second year UROP studies how rate of
+              decay varies with the nature of flow." />
+          </div> */}
         </div>
       </div>
     );
   }
 }
 
-export default Publication;
+export default Research;

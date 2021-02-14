@@ -15,7 +15,7 @@ class YearContainer extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      isExpanded: Boolean(false)
+      isExpanded: Boolean(true)
     };
   }
 
@@ -46,7 +46,7 @@ class YearContainer extends Component {
             return (
               <div key={i}>
                <h4 className="u-nomargin"> {termObj.term}: </h4>
-               <div className="courselist-grid"> 
+               {(termObj.listener) ? (<div className="courselist-grid"> 
                <div className="u-nomargin"> 
                 <h5 className="u-nomargin"> Attended: </h5> 
                 <ul className="u-nomargin">
@@ -60,8 +60,15 @@ class YearContainer extends Component {
                   {termObj.listener.map( (course,i) => { return (
                       <li key={i}> {course} </li>
                   )})}
-                </ul></div>
-               </div>
+                </ul></div> </div>) : (
+                  <div className="courselist-nolisten"> 
+                  <h5 className="u-nomargin"> Attended: </h5> 
+                  <ul className="u-nomargin">
+                    {termObj.attended.map( (course,i) => { return (
+                      <li key={i}> {course} </li>
+                    )})}
+                  </ul></div>
+                )}
               </div>
             )})}
           </div>

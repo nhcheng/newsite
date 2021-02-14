@@ -1,5 +1,62 @@
-.publication-highlight {
-    color: var(--blue);
+.research-grid {
+    margin-top: 4vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 15px;
+    grid-template-areas:
+    "One-Left One-Right"
+    "Two-Left Two-Right"
+    "Three-Left" "Three-Right" 
+    "Four-Left" "Four-Right";
+    grid-auto-rows: auto;
+}
+
+.research-first-left {
+    grid-area: One-Left;
+}
+
+.research-first-right {
+    grid-area: One-Right;
+}
+
+.research-second-left {
+    grid-area: Two-Left;
+}
+
+.research-second-right {
+    grid-area: Two-Right;
+}
+
+.research-third-left {
+    grid-area: Three-Left;
+}
+
+.research-third-right {
+    grid-area: Three-Left;
+}
+
+.research-fourth-left {
+    grid-area: Four-Left;
+}
+
+.research-fourth-right {
+    grid-area: Four-Left;
+}
+
+.highlight {
+    color: #fff066;
     font-size: 48px;
     font-weight:300;
 }
+
+/* .research-dynam-one {
+    grid-area: Three;
+}
+
+.research-dynam-two {
+    grid-area: Four;
+} */
+
+/* .math-right {
+} */

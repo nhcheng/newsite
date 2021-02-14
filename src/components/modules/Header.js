@@ -17,7 +17,7 @@ class Header extends Component {
   render() {
     return (
       <header className="Header-container">
-          <h1 className="Header-left"> ChunHei Samuel Lam </h1>
+          <h1  className="Header-left"> Thomas Nok Hin Cheng </h1>
           <div className="Header-right"> <Institutes /> </div>
       </header>
     );
